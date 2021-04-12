@@ -7,7 +7,7 @@ A simple and beautiful clock that works only with JS, HTML and CSS. Without CANV
 ### Getting start
 
 ```sh
-git clone https://github.com/josealejandro2928/React-Note-App.git
+git clone https://github.com/josealejandro2928/clock-js.git
 ```
 Inside the project folder.
 ```sh
