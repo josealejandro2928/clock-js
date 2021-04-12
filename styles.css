@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clock-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 50%;
+    background-color: #fafafa;
+    /* background-image: url(./assets/images/img.jpeg); */
+}
+
+.circle {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .25)
+}
+
+
+.seconds {
+    position: absolute;
+    width: calc(150px - 16px);
+    height: 2px;
+    background-color: red;
+    transform-origin: 0% 50% 0;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    transform: translate(-0%, -50%) rotate(calc(0deg - 90deg));
+}
+
+.minutes {
+    position: absolute;
+    width: calc(150px - 32px);
+    height: 3px;
+    background-color: #424242;
+    transform-origin: 0% 50% 0;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    transform: translate(-0%, -50%) rotate(calc(30deg - 90deg));
+}
+
+.hours {
+    position: absolute;
+    width: calc(150px - 64px);
+    height: 4px;
+    background-color: #424242;
+    transform-origin: 0% 50% 0;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    transform: translate(-0%, -50%) rotate(calc(90deg - 90deg));
+}
+
+.mark {
+    position: absolute;
+    left: 50%;
+    /* top: 20px; */
+    bottom: 20px;
+    transform: translateX(-50%);
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.mark span {
+    display: inline-block;
+}
+
+.labels {
+    display: flex;
+    font-size: 40px;
+}
+
+.date {
+    color: #aaaa;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.theme-toogle {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #222222;
+    cursor: pointer;
+    margin: 32px 0px;
+}
+
+button:focus {
+    outline: none;
+
+}
+
+button:active {
+    transform: scale(.93);
+}
+
+.dark-theme {
+    background-color: #222222;
+    color: white;
+    transition: all .5s ease;
+}
+
+.dark-theme .clock-container {
+    background-color: #424242;
+    color: #fff;
+}
+
+.dark-theme .clock-container .minutes {
+    background-color: #fff
+}
+
+.dark-theme .clock-container .hours {
+    background-color: #fff
+}
+
+.dark-theme .theme-toogle {
+    background-color: #fff;
+    color:#222222;
+}
