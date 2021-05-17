@@ -3,6 +3,12 @@
 
 A simple and beautiful clock that works only with JS, HTML and CSS. Without CANVAS, SVG. Pure CSS and JavaScript date class
 
+### Improve your knowledge of vanilla javascript
+1. Only JavaScript
+2. No css preprocessors, only CSS3
+3. No Vue, no React, no Angular and no jquery
+
+
 
 ### Getting start
 
