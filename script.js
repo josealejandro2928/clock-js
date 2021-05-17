@@ -24,7 +24,9 @@ setInterval(() => {
   hourLabel.innerText = hours;
   minLabel.innerText = formatizeTime(minutes);
   amOrPm.innerText = date.getHours() > 12 ? 'PM' : 'AM';
-  dateLabel.innerText = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+  dateLabel.innerText = `${date.getDate()}/${
+    date.getMonth() + 1
+  }/${date.getFullYear()}`;
 }, 990);
 
 themeBtn.addEventListener('click', () => {

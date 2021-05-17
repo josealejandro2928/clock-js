@@ -144,5 +144,33 @@ button:active {
 
 .dark-theme .theme-toogle {
     background-color: #fff;
-    color:#222222;
+    color: #222222;
+}
+
+
+.github-section {
+    position: fixed;
+    bottom: 0;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 9px;
+    animation: showlink 1s ease 1 forwards;
+    animation-delay: .5s;
+    transform: translateY(100%);
+}
+
+@keyframes showlink {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
 }
